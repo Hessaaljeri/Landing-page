@@ -11,6 +11,8 @@ urlpatterns = [
     # url(r'^$', 'project.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
 
+    url(r'^$', TemplateView.as_view(template_name='landingpage1.html')),
+    
     url(r'^landingpage/$', TemplateView.as_view(template_name='landingpage1.html'), name='landingpage'),
 
     url(r'^admin/', include(admin.site.urls)),
