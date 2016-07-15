@@ -13,7 +13,7 @@ def email_submission(request):
     email = request.GET.get('email')
     message = request.GET.get('message')
 
-    recipients = [email]
+    
 
     print recipients
     print name
