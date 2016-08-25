@@ -18,7 +18,7 @@ def sendmail(request):
 		recipients = [email]
 
 		# send_mail(subject, message, from_email, recipient_list, fail_silently=False, auth_user=None, auth_password=None, connection=None, html_message=None)
-		send_mail(name, ('From: %s - Message: %s' % (email, message)), email, ['sharedslots@gmail.com'], fail_silently=False)
+		send_mail(name, ('From: %s - Message: %s' % (email, message)), email, ['mukkancom@gmail.com'], fail_silently=False)
 		return HttpResponse('Your Message Has Been Sent, Thank You')
 	context = {
 		"form": form,
