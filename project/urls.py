@@ -15,7 +15,7 @@ urlpatterns = [
 
 
     url(r'^landingpage/$', TemplateView.as_view(template_name='landingpage1.html'), name='landingpage'),
-    url(r'^email_submission/$','main.views.email_submission'),
+    # url(r'^email_submission/$','main.views.email_submission'),
 
     url(r'^Contact/$', 'main.views.sendmail'),
 
