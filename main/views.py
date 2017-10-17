@@ -8,7 +8,7 @@ from django.views.decorators.csrf import csrf_exempt
 
 # Create your views here.
 @csrf_exempt
-def sendmail(request):
+def email_submission(request):
 	form = EmailForm(request.POST or None)
 
 	if form.is_valid():
